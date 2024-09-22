@@ -1,0 +1,137 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+/* .header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+} */
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+  font-weight: normal; /* Default font weight */
+  display: inline-block;
+  transition: transform 0.3s ease, font-weight 0.3s ease, color 0.3s ease;
+}
+
+.header .navbar a:hover {
+  color: var(--orange);    /* Change color on hover */
+  font-weight: bold;       /* Make text bold on hover */
+  transform: scale(1.4);   /* Scale the link to 120% on hover */
+  z-index: 1;
+}
+
+.header .logo img {
+  width: 40%;
+  padding: 0%;
+}
+
+.header .logo img:hover{
+  transform: scale(1.5);
+}
+
+.header .icons div:hover {
+  color: var(--orange);
+}
+
+/* Fancier user icon with dropdown */
+.header .icons .user-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header .icons .dropdown-content {
+  position: absolute;
+  /* background-color: var(--white); */
+  background-color: rgb(222, 143, 156);
+  min-width: 220px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  right: 0;
+  top: 50px;
+  border-radius: 10px;
+  display: block;
+  text-align: left;
+}
+
+.header .icons .dropdown-content a {
+  color: var(--black);
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  transition: background 0.3s ease;
+}
+
+.header .icons .dropdown-content a i {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.header .icons .dropdown-content a:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+#menu-btn {
+  display: none;
+}
+
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+}
+

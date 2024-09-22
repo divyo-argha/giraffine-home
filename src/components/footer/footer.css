@@ -1,0 +1,62 @@
+/* Updated Footer Styles */
+.footer {
+  background: var(--black);
+  padding: 1rem 0rem 1rem 0rem;
+  color: var(--white);
+}
+
+.footer .footer-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* More flexible column layout */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the footer content */
+}
+
+.footer .footer-box h3 {
+  font-size: 2.2rem;
+  color: var(--white);
+  padding-bottom: 15px;
+}
+
+.footer .footer-box a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 8px 0;
+}
+
+.footer .footer-box a i {
+  padding-right: 0.5rem;
+  color: var(--orange);
+}
+
+.footer .footer-box a:hover i {
+  padding-right: 1rem;
+  scale: 1.4;
+}
+
+.footer .footer-box a:hover {
+  color: var(--orange);
+}
+
+.footer .credit {
+  text-align: center;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.footer .credit span {
+  color: var(--orange);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer .footer-box-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

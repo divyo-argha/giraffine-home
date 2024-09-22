@@ -1,0 +1,105 @@
+
+
+.education .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.education .box-container .boxes{
+  background: var(--white);
+  border-radius: 2rem;
+  font-weight: 800;
+  box-shadow: var(--box-shadow);
+  outline: .1rem solid rgba(0,0,0,.1);
+  outline-offset: -1rem;
+  overflow: hidden;
+}
+
+.education .box-container .boxes:hover img{
+  transform: scale(1.1);
+}
+
+.education .box-container .boxes:nth-child(odd){
+  background: rgb(7, 29, 24);
+}
+
+.education .box-container .boxes:nth-child(2){
+  background: var(--orange);
+}
+
+.education .box-container .boxes h3{
+  font-size: 2.5rem;
+  color: var(--white);
+  line-height: 1.8;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.education .box-container .boxes p{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--white);
+  padding: 1rem 2rem;
+}
+
+.education .box-container .boxes img {
+  width: 66%;
+  height: 66%;
+  display: block;
+  margin: 0 auto; /* This centers the image horizontally */
+}
+
+
+
+
+
+.horizontal-card-container {
+  display: flex; /* Use flexbox to arrange cards in a row */
+  justify-content: space-between; /* Space between cards */
+  margin-top: 2rem; /* Space above the cards */
+}
+
+.horizontal-card {
+  display: flex; /* Flexbox for image and text layout */
+  align-items: center; /* Center content vertically */
+  background: #f0f0f0; /* Initial background color */
+  padding: 2rem; /* Increased padding for larger cards */
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  transition: background 0.3s, transform 0.3s; /* Transition for hover effect */
+  flex: 1; /* Allow cards to take equal space */
+  margin: 0 1rem; /* Margin around each card */
+}
+
+.horizontal-card:hover {
+  background: var(--orange); /* Change background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.horizontal-card img {
+  width: 150px; /* Set a consistent width for images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1.5rem; /* Space between image and content */
+}
+
+.lottie {
+  width: 150px;
+  height: 150px;
+}
+
+
+.horizontal-content {
+  flex: 1; /* Allow text content to take remaining space */
+}
+
+.horizontal-content h3 {
+  font-size: 1.8rem; /* Title font size */
+  color: var(--black); /* Text color */
+}
+
+.horizontal-content p {
+  font-size: 1.4rem; /* Description font size */
+  color: var(--black); /* Text color */
+}
+

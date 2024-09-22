@@ -1,0 +1,74 @@
+.home{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  color: var(--black);
+}
+
+.home .content h3 span{
+  color: var(--orange);
+  font-size: 7rem;
+}
+
+.home .content p{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.home .image{
+  flex: 1 1 30rem;
+}
+
+.home .image img{
+  width: 100%;
+  padding: 4rem;
+}
+
+.custom-shape-divider-bottom-1684324473 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684324473 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684324473 .shape-fill {
+  /* fill: #0575E6;   */
+  /* fill: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+  fill: linear-gradient(to right, #021B79, #0575E6);  */
+}
+
+@media (max-width:991px){
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width:450px){
+  .home .content h3{
+    font-size: 3.5rem;
+  }
+}
